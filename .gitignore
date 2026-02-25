@@ -9,6 +9,9 @@
 
 # dependencies
 /node_modules
+.angular
+.angular
+.nx
 
 # IDEs and editors
 /.idea

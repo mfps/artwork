@@ -58,6 +58,9 @@
           "buildTarget": "art-work:build:development"
         }
       },
+      "options": {
+        "port": 4444
+      },
       "defaultConfiguration": "development"
     },
     "lint": {
