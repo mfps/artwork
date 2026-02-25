@@ -1,0 +1,1606 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "aR3Bb",
+      "x": -400,
+      "y": 0,
+      "name": "NavItem",
+      "reusable": true,
+      "width": 220,
+      "cornerRadius": 8,
+      "gap": 12,
+      "padding": [
+        10,
+        16
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "GcxBM",
+          "name": "navIcon",
+          "width": 20,
+          "height": 20,
+          "iconFontName": "image",
+          "iconFontFamily": "lucide",
+          "fill": "$sidebar-text-muted"
+        },
+        {
+          "type": "text",
+          "id": "s6lJf",
+          "name": "navLabel",
+          "fill": "$sidebar-text-muted",
+          "content": "Menu Item",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gpqBV",
+      "x": -400,
+      "y": 80,
+      "name": "StatusBadge",
+      "reusable": true,
+      "fill": "#E8F5F5",
+      "cornerRadius": 4,
+      "padding": [
+        4,
+        10
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "DwLRC",
+          "name": "badgeText",
+          "fill": "$accent-teal",
+          "content": "Available",
+          "fontFamily": "JetBrains Mono",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 0.5
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KMZyi",
+      "x": -400,
+      "y": 130,
+      "name": "Button",
+      "reusable": true,
+      "fill": "$accent-teal",
+      "cornerRadius": 8,
+      "gap": 8,
+      "padding": [
+        10,
+        20
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "3HMzw",
+          "name": "btnIcon",
+          "width": 16,
+          "height": 16,
+          "iconFontName": "plus",
+          "iconFontFamily": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "text",
+          "id": "qAjTo",
+          "name": "btnLabel",
+          "fill": "#FFFFFF",
+          "content": "Add Artwork",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qnB3N",
+      "x": -400,
+      "y": 200,
+      "name": "ArtworkCard",
+      "reusable": true,
+      "clip": true,
+      "width": 260,
+      "fill": "$bg-card",
+      "cornerRadius": 12,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$border-primary"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KVDQt",
+          "name": "cardImage",
+          "width": "fill_container",
+          "height": 180,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1772023050754.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "jpULV",
+          "name": "cardBody",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "b0X9V",
+              "name": "cardTitle",
+              "fill": "$text-primary",
+              "content": "Sunset Over Mountains",
+              "fontFamily": "Newsreader",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "NN1Kf",
+              "name": "cardMeta",
+              "width": "fill_container",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5iud6",
+                  "name": "cardYear",
+                  "fill": "$text-tertiary",
+                  "content": "2024",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "sZUNX",
+                  "name": "cardMedium",
+                  "fill": "$text-secondary",
+                  "content": "Oil on Canvas",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iv8Pv",
+              "name": "cardFooter",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "83apc",
+                  "name": "cardPrice",
+                  "fill": "$text-primary",
+                  "content": "$2,400",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "id": "XH92B",
+                  "type": "ref",
+                  "ref": "gpqBV",
+                  "name": "cardBadge"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gmn7A",
+      "x": -400,
+      "y": 520,
+      "name": "InputField",
+      "reusable": true,
+      "width": 320,
+      "layout": "vertical",
+      "gap": 6,
+      "children": [
+        {
+          "type": "text",
+          "id": "CRLm5",
+          "name": "inputLabel",
+          "fill": "$text-tertiary",
+          "content": "LABEL",
+          "fontFamily": "JetBrains Mono",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2
+        },
+        {
+          "type": "frame",
+          "id": "zrikN",
+          "name": "inputBox",
+          "width": "fill_container",
+          "fill": "$bg-card",
+          "cornerRadius": 8,
+          "stroke": {
+            "thickness": 1,
+            "fill": "$border-primary"
+          },
+          "padding": [
+            10,
+            14
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "0oJaZ",
+              "name": "inputValue",
+              "fill": "$text-primary",
+              "content": "Value",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "YHMhF",
+      "x": 0,
+      "y": 0,
+      "name": "Dashboard",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg-page",
+      "children": [
+        {
+          "type": "frame",
+          "id": "cVhdd",
+          "name": "sidebar",
+          "width": 260,
+          "height": "fill_container",
+          "fill": "$sidebar-bg",
+          "layout": "vertical",
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "4jD5d",
+              "name": "logo",
+              "gap": 10,
+              "padding": [
+                0,
+                0,
+                32,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "TCBUD",
+                  "name": "logoIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "palette",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-teal"
+                },
+                {
+                  "type": "text",
+                  "id": "bpX8x",
+                  "name": "logoText",
+                  "fill": "$sidebar-text",
+                  "content": "ArtWork",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 22,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "KxjUR",
+              "name": "navSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "H3vYt",
+                  "name": "navLabel",
+                  "fill": "$sidebar-text-muted",
+                  "content": "MANAGE",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "id": "gPPjr",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "fill": "$sidebar-hover",
+                  "width": "fill_container",
+                  "name": "nav1",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "layout-grid",
+                      "fill": "#FFFFFF"
+                    },
+                    "s6lJf": {
+                      "content": "All Artworks",
+                      "fill": "#FFFFFF"
+                    }
+                  }
+                },
+                {
+                  "id": "3Sbxs",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "width": "fill_container",
+                  "name": "nav2",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "clock"
+                    },
+                    "s6lJf": {
+                      "content": "Recent"
+                    }
+                  }
+                },
+                {
+                  "id": "SpRIX",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "width": "fill_container",
+                  "name": "nav3",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "tag"
+                    },
+                    "s6lJf": {
+                      "content": "Collections"
+                    }
+                  }
+                },
+                {
+                  "id": "xWFmX",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "width": "fill_container",
+                  "name": "nav4",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "shopping-bag"
+                    },
+                    "s6lJf": {
+                      "content": "Sales"
+                    }
+                  }
+                },
+                {
+                  "id": "bm6pS",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "width": "fill_container",
+                  "name": "nav5",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "users"
+                    },
+                    "s6lJf": {
+                      "content": "Clients"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GmBvg",
+              "name": "navSection2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                32,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pBSAR",
+                  "name": "navLabel2",
+                  "fill": "$sidebar-text-muted",
+                  "content": "ACCOUNT",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "id": "9HFl8",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "width": "fill_container",
+                  "name": "nav6",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "settings"
+                    },
+                    "s6lJf": {
+                      "content": "Settings"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8trw4",
+          "name": "mainContent",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            32,
+            40
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "SMrKZ",
+              "name": "header",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Vlixa",
+                  "name": "headerLeft",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nFhUU",
+                      "name": "headerTitle",
+                      "fill": "$text-primary",
+                      "content": "All Artworks",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 32,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Amw1z",
+                      "name": "headerSub",
+                      "fill": "$text-secondary",
+                      "content": "24 pieces in your collection",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "He2Kc",
+                  "name": "headerRight",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "KcLJN",
+                      "name": "searchBox",
+                      "fill": "$bg-card",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "GimEj",
+                          "name": "searchIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "search",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-muted"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IhRIQ",
+                          "name": "searchText",
+                          "fill": "$text-muted",
+                          "content": "Search artworks...",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "sByHM",
+                      "type": "ref",
+                      "ref": "KMZyi",
+                      "name": "addBtn"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GOn6A",
+              "name": "statsRow",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XCsDQ",
+                  "name": "stat1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sy5e8",
+                      "name": "stat1Val",
+                      "fill": "$text-primary",
+                      "content": "24",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yEgUI",
+                      "name": "stat1Label",
+                      "fill": "$text-tertiary",
+                      "content": "Total Artworks",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "icS1b",
+                  "name": "stat2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qEbG1",
+                      "name": "stat2Val",
+                      "fill": "$accent-teal",
+                      "content": "18",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UPGKo",
+                      "name": "stat2Label",
+                      "fill": "$text-tertiary",
+                      "content": "Available",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "600sP",
+                  "name": "stat3",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zZnd1",
+                      "name": "stat3Val",
+                      "fill": "$accent-orange",
+                      "content": "6",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KZHaO",
+                      "name": "stat3Label",
+                      "fill": "$text-tertiary",
+                      "content": "Sold",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9YIvg",
+                  "name": "stat4",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5r0nC",
+                      "name": "stat4Val",
+                      "fill": "$text-primary",
+                      "content": "$34.2k",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L9dLS",
+                      "name": "stat4Label",
+                      "fill": "$text-tertiary",
+                      "content": "Total Revenue",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "TUs2v",
+              "name": "gridLabel",
+              "fill": "$text-tertiary",
+              "content": "RECENT ARTWORKS",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "f7PBA",
+              "name": "grid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "C8Omy",
+                  "type": "ref",
+                  "ref": "qnB3N",
+                  "width": "fill_container",
+                  "name": "c1",
+                  "descendants": {
+                    "KVDQt": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023131075.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "b0X9V": {
+                      "content": "Sunset Over Mountains"
+                    },
+                    "5iud6": {
+                      "content": "2024"
+                    },
+                    "sZUNX": {
+                      "content": "Oil on Canvas"
+                    },
+                    "83apc": {
+                      "content": "$2,400"
+                    }
+                  }
+                },
+                {
+                  "id": "PJ7ZK",
+                  "type": "ref",
+                  "ref": "qnB3N",
+                  "width": "fill_container",
+                  "name": "c2",
+                  "descendants": {
+                    "KVDQt": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023137697.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "b0X9V": {
+                      "content": "Urban Fragments No. 7"
+                    },
+                    "5iud6": {
+                      "content": "2023"
+                    },
+                    "sZUNX": {
+                      "content": "Acrylic on Board"
+                    },
+                    "83apc": {
+                      "content": "$1,800"
+                    },
+                    "XH92B": {
+                      "fill": "#FFF0E8"
+                    },
+                    "XH92B/DwLRC": {
+                      "content": "Sold",
+                      "fill": "$accent-orange"
+                    }
+                  }
+                },
+                {
+                  "id": "bLRrU",
+                  "type": "ref",
+                  "ref": "qnB3N",
+                  "width": "fill_container",
+                  "name": "c3",
+                  "descendants": {
+                    "KVDQt": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023144904.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "b0X9V": {
+                      "content": "Still Life with Lemons"
+                    },
+                    "5iud6": {
+                      "content": "2024"
+                    },
+                    "sZUNX": {
+                      "content": "Watercolor"
+                    },
+                    "83apc": {
+                      "content": "$950"
+                    }
+                  }
+                },
+                {
+                  "id": "wV7KV",
+                  "type": "ref",
+                  "ref": "qnB3N",
+                  "width": "fill_container",
+                  "name": "c4",
+                  "descendants": {
+                    "KVDQt": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023151573.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "b0X9V": {
+                      "content": "Ocean Whispers"
+                    },
+                    "5iud6": {
+                      "content": "2023"
+                    },
+                    "sZUNX": {
+                      "content": "Mixed Media"
+                    },
+                    "83apc": {
+                      "content": "$3,200"
+                    },
+                    "XH92B": {
+                      "fill": "$bg-control"
+                    },
+                    "XH92B/DwLRC": {
+                      "content": "Reserved",
+                      "fill": "$text-tertiary"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ReItd",
+      "x": 1540,
+      "y": 0,
+      "name": "Artwork Detail",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg-page",
+      "children": [
+        {
+          "type": "frame",
+          "id": "iVkfx",
+          "name": "sidebar2",
+          "width": 260,
+          "height": "fill_container",
+          "fill": "$sidebar-bg",
+          "layout": "vertical",
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "jrKrR",
+              "name": "logo2",
+              "gap": 10,
+              "padding": [
+                0,
+                0,
+                32,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "CJDEw",
+                  "name": "logoIcon2",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "palette",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-teal"
+                },
+                {
+                  "type": "text",
+                  "id": "qKa5m",
+                  "name": "logoText2",
+                  "fill": "$sidebar-text",
+                  "content": "ArtWork",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 22,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "unKDn",
+              "name": "navSec",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GodoP",
+                  "name": "navLbl",
+                  "fill": "$sidebar-text-muted",
+                  "content": "MANAGE",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "id": "6cUaH",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "fill": "$sidebar-hover",
+                  "width": "fill_container",
+                  "name": "dn1",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "layout-grid",
+                      "fill": "#FFFFFF"
+                    },
+                    "s6lJf": {
+                      "content": "All Artworks",
+                      "fill": "#FFFFFF"
+                    }
+                  }
+                },
+                {
+                  "id": "OrYkD",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "width": "fill_container",
+                  "name": "dn2",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "tag"
+                    },
+                    "s6lJf": {
+                      "content": "Collections"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "t5Nwg",
+          "name": "mainArea",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            32,
+            40
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "zJAG7",
+              "name": "breadcrumb",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Du7iE",
+                  "name": "bcBack",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "arrow-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "m13Tb",
+                  "name": "bcAll",
+                  "fill": "$accent-teal",
+                  "content": "All Artworks",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "XN6eN",
+                  "name": "bcSep",
+                  "fill": "$text-muted",
+                  "content": "/",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "mZKUC",
+                  "name": "bcCurrent",
+                  "fill": "$text-secondary",
+                  "content": "Sunset Over Mountains",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kn4S7",
+              "name": "detailBody",
+              "width": "fill_container",
+              "height": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PTNRk",
+                  "name": "imgCol",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "d7mI5",
+                      "name": "imgFrame",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023194221.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GG2wg",
+                  "name": "formCol",
+                  "width": 400,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FOFH1",
+                      "name": "formHeader",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ppDpn",
+                          "name": "formTitle",
+                          "fill": "$text-primary",
+                          "content": "Artwork Details",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 24,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "id": "dSDmI",
+                          "type": "ref",
+                          "ref": "gpqBV",
+                          "name": "formBadge"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "xkGsn",
+                      "type": "ref",
+                      "ref": "gmn7A",
+                      "width": "fill_container",
+                      "name": "f1",
+                      "descendants": {
+                        "CRLm5": {
+                          "content": "TITLE"
+                        },
+                        "0oJaZ": {
+                          "content": "Sunset Over Mountains"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DwO65",
+                      "name": "f2",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "id": "gW2Qz",
+                          "type": "ref",
+                          "ref": "gmn7A",
+                          "width": "fill_container",
+                          "name": "f2a",
+                          "descendants": {
+                            "CRLm5": {
+                              "content": "YEAR"
+                            },
+                            "0oJaZ": {
+                              "content": "2024"
+                            }
+                          }
+                        },
+                        {
+                          "id": "fHAs5",
+                          "type": "ref",
+                          "ref": "gmn7A",
+                          "width": "fill_container",
+                          "name": "f2b",
+                          "descendants": {
+                            "CRLm5": {
+                              "content": "MEDIUM"
+                            },
+                            "0oJaZ": {
+                              "content": "Oil on Canvas"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "B25sc",
+                      "name": "f3",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "id": "2yZtn",
+                          "type": "ref",
+                          "ref": "gmn7A",
+                          "width": "fill_container",
+                          "name": "f3a",
+                          "descendants": {
+                            "CRLm5": {
+                              "content": "DIMENSIONS"
+                            },
+                            "0oJaZ": {
+                              "content": "24 × 36 in"
+                            }
+                          }
+                        },
+                        {
+                          "id": "P5GS2",
+                          "type": "ref",
+                          "ref": "gmn7A",
+                          "width": "fill_container",
+                          "name": "f3b",
+                          "descendants": {
+                            "CRLm5": {
+                              "content": "PRICE"
+                            },
+                            "0oJaZ": {
+                              "content": "$2,400"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "daOWe",
+                      "name": "f4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BHIVz",
+                          "name": "f4Label",
+                          "fill": "$text-tertiary",
+                          "content": "DESCRIPTION",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0bipn",
+                          "name": "f4Box",
+                          "width": "fill_container",
+                          "height": 80,
+                          "fill": "$bg-card",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-primary"
+                          },
+                          "layout": "vertical",
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SwpHl",
+                              "name": "f4Val",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A vibrant impressionist landscape capturing the warm glow of sunset over a mountain range. Created with palette knife technique.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FyYg3",
+                      "name": "f5",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "id": "luz4P",
+                          "type": "ref",
+                          "ref": "gmn7A",
+                          "width": "fill_container",
+                          "name": "f5a",
+                          "descendants": {
+                            "CRLm5": {
+                              "content": "COLLECTION"
+                            },
+                            "0oJaZ": {
+                              "content": "Landscapes"
+                            }
+                          }
+                        },
+                        {
+                          "id": "x5eCU",
+                          "type": "ref",
+                          "ref": "gmn7A",
+                          "width": "fill_container",
+                          "name": "f5b",
+                          "descendants": {
+                            "CRLm5": {
+                              "content": "STATUS"
+                            },
+                            "0oJaZ": {
+                              "content": "Available"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LjH6c",
+                      "name": "f5b_cat",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Dvqvp",
+                          "name": "catLabel",
+                          "fill": "$text-tertiary",
+                          "content": "CATEGORY",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "q8iQ1",
+                          "name": "catBox",
+                          "width": "fill_container",
+                          "fill": "$bg-card",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-primary"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iLMN7",
+                              "name": "catVal",
+                              "fill": "$text-primary",
+                              "content": "Painting",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "balSM",
+                              "name": "catChevron",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nvNde",
+                          "name": "catDropdown",
+                          "clip": true,
+                          "width": "fill_container",
+                          "fill": "$bg-card",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-primary"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "k0PSV",
+                              "name": "optPainting",
+                              "width": "fill_container",
+                              "fill": "#E6F2F2",
+                              "padding": [
+                                10,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "HkpkN",
+                                  "name": "opt1txt",
+                                  "fill": "$text-primary",
+                                  "content": "Painting",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "B2zJT",
+                              "name": "optSculpture",
+                              "width": "fill_container",
+                              "padding": [
+                                10,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "a2t2M",
+                                  "name": "opt2txt",
+                                  "fill": "$text-secondary",
+                                  "content": "Sculpture",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "rOuQK",
+                      "type": "ref",
+                      "ref": "gmn7A",
+                      "width": "fill_container",
+                      "name": "f6",
+                      "descendants": {
+                        "CRLm5": {
+                          "content": "LOCATION"
+                        },
+                        "0oJaZ": {
+                          "content": "Studio — Shelf A3"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rTWDt",
+                      "name": "actions",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "id": "N8yZz",
+                          "type": "ref",
+                          "ref": "KMZyi",
+                          "name": "saveBtn",
+                          "descendants": {
+                            "3HMzw": {
+                              "iconFontName": "save"
+                            },
+                            "qAjTo": {
+                              "content": "Save Changes"
+                            }
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "9goyD",
+                          "name": "delBtn",
+                          "fill": "$bg-card",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-primary"
+                          },
+                          "gap": 8,
+                          "padding": [
+                            10,
+                            20
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "B801x",
+                              "name": "delIcon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "trash-2",
+                              "iconFontFamily": "lucide",
+                              "fill": "#CC4444"
+                            },
+                            {
+                              "type": "text",
+                              "id": "VjGU0",
+                              "name": "delLabel",
+                              "fill": "#CC4444",
+                              "content": "Delete",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-orange": {
+      "type": "color",
+      "value": "#E07B54"
+    },
+    "accent-teal": {
+      "type": "color",
+      "value": "#0D6E6E"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "bg-control": {
+      "type": "color",
+      "value": "#F0F0F0"
+    },
+    "bg-muted": {
+      "type": "color",
+      "value": "#F8F8F8"
+    },
+    "bg-page": {
+      "type": "color",
+      "value": "#FAFAFA"
+    },
+    "border-divider": {
+      "type": "color",
+      "value": "#F0F0F0"
+    },
+    "border-primary": {
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    "sidebar-bg": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "sidebar-hover": {
+      "type": "color",
+      "value": "#2A2A2A"
+    },
+    "sidebar-text": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "sidebar-text-muted": {
+      "type": "color",
+      "value": "#888888"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#AAAAAA"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#666666"
+    },
+    "text-tertiary": {
+      "type": "color",
+      "value": "#888888"
+    }
+  }
+}

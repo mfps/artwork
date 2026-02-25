@@ -1,0 +1,144 @@
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  height: 100%;
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$magenta-palette,
+        tertiary: mat.$violet-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
+body {
+  // Default the application to a light color theme. This can be changed to
+  // `dark` to enable the dark color theme, or to `light dark` to defer to the
+  // user's system settings.
+  color-scheme: light;
+
+  // Set a default background, font and text colors for the application using
+  // Angular Material's system-level CSS variables. Learn more about these
+  // variables at https://material.angular.dev/guide/system-variables
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+  height: 100%;
+}
+
+// Design tokens
+:root {
+  --sidebar-bg: #1a1a1a;
+  --sidebar-hover: #2a2a2a;
+  --sidebar-text: #ffffff;
+  --sidebar-text-muted: #888888;
+
+  --accent-teal: #0d6e6e;
+  --accent-orange: #e07b54;
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --text-tertiary: #888888;
+  --text-muted: #aaaaaa;
+
+  --bg-card: #ffffff;
+  --bg-page: #fafafa;
+  --bg-muted: #f8f8f8;
+  --bg-control: #f0f0f0;
+
+  --border-primary: #e5e5e5;
+  --border-divider: #f0f0f0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #f5f5f5;
+}
+
+// Auth layout
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+.auth-card mat-card-header {
+  margin-bottom: 8px;
+}
+
+.auth-card mat-card-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.auth-form mat-form-field {
+  width: 100%;
+}
+
+.field-row {
+  display: flex;
+  gap: 16px;
+
+  mat-form-field {
+    flex: 1;
+  }
+}
+
+.auth-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+// Dashboard layout
+.dashboard-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.dashboard-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}

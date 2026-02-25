@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["libs/feature-auth/src/lib/feature-auth.routes.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\nimport { noAuthGuard } from '@art-work/core';\n\nexport const authRoutes: Routes = [\n  { path: '', redirectTo: 'login', pathMatch: 'full' },\n  {\n    path: 'login',\n    loadComponent: () =>\n      import('./login/login.component').then((m) => m.LoginComponent),\n    canActivate: [noAuthGuard],\n  },\n  {\n    path: 'register',\n    loadComponent: () =>\n      import('./register/register.component').then((m) => m.RegisterComponent),\n    canActivate: [noAuthGuard],\n  },\n  {\n    path: 'forgot-password',\n    loadComponent: () =>\n      import('./forgot-password/forgot-password.component').then(\n        (m) => m.ForgotPasswordComponent,\n      ),\n    canActivate: [noAuthGuard],\n  },\n  {\n    path: 'reset-password',\n    loadComponent: () =>\n      import('./reset-password/reset-password.component').then(\n        (m) => m.ResetPasswordComponent,\n      ),\n  },\n];\n"],
+  "mappings": ";;;;;;;AAGO,IAAM,aAAqB;EAChC,EAAE,MAAM,IAAI,YAAY,SAAS,WAAW,OAAM;EAClD;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAAyB,EAAE,KAAK,CAAC,MAAM,EAAE,cAAc;IAChE,aAAa,CAAC,WAAW;;EAE3B;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAA+B,EAAE,KAAK,CAAC,MAAM,EAAE,iBAAiB;IACzE,aAAa,CAAC,WAAW;;EAE3B;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAA6C,EAAE,KACpD,CAAC,MAAM,EAAE,uBAAuB;IAEpC,aAAa,CAAC,WAAW;;EAE3B;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAA2C,EAAE,KAClD,CAAC,MAAM,EAAE,sBAAsB;;;",
+  "names": []
+}

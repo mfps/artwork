@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["libs/feature-auth/src/lib/login/login.component.ts"],
+  "sourcesContent": ["\n    .banner-error {\n      display: block;\n      margin-bottom: 12px;\n      font-size: 14px;\n    }\n  "],
+  "mappings": ";AACI,CAAA;AACE,WAAA;AACA,iBAAA;AACA,aAAA;;",
+  "names": []
+}

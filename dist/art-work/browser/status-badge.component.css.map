@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["libs/ui/src/lib/status-badge/status-badge.component.ts"],
+  "sourcesContent": ["\n    .badge {\n      display: inline-flex;\n      align-items: center;\n      padding: 4px 10px;\n      border-radius: 4px;\n      font-family: 'JetBrains Mono', monospace;\n      font-size: 10px;\n      font-weight: 600;\n      letter-spacing: 0.5px;\n      white-space: nowrap;\n    }\n    .badge--available { color: var(--accent-teal); background: #E8F5F5; }\n    .badge--sold      { color: var(--accent-orange); background: #FFF0E8; }\n    .badge--reserved  { color: var(--text-tertiary); background: var(--bg-control); }\n  "],
+  "mappings": ";AACI,CAAA;AACE,WAAA;AACA,eAAA;AACA,WAAA,IAAA;AACA,iBAAA;AACA,eAAA,gBAAA,EAAA;AACA,aAAA;AACA,eAAA;AACA,kBAAA;AACA,eAAA;;AAEF,CAAA;AAAoB,SAAA,IAAA;AAA2B,cAAA;;AAC/C,CAAA;AAAoB,SAAA,IAAA;AAA6B,cAAA;;AACjD,CAAA;AAAoB,SAAA,IAAA;AAA6B,cAAA,IAAA;;",
+  "names": []
+}

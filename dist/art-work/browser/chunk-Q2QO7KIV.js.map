@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["libs/feature-artworks/src/lib/feature-artworks.routes.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\nimport { authGuard } from '@art-work/core';\n\nexport const artworkRoutes: Routes = [\n  {\n    path: ':id',\n    loadComponent: () =>\n      import('./artwork-detail/artwork-detail.component').then(\n        (m) => m.ArtworkDetailComponent,\n      ),\n    canActivate: [authGuard],\n  },\n];\n"],
+  "mappings": ";;;;;;;AAGO,IAAM,gBAAwB;EACnC;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAA2C,EAAE,KAClD,CAAC,MAAM,EAAE,sBAAsB;IAEnC,aAAa,CAAC,SAAS;;;",
+  "names": []
+}

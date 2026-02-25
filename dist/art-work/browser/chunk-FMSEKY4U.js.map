@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["libs/feature-dashboard/src/lib/feature-dashboard.routes.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\nimport { authGuard } from '@art-work/core';\n\nexport const dashboardRoutes: Routes = [\n  {\n    path: '',\n    loadComponent: () =>\n      import('./dashboard/dashboard.component').then(\n        (m) => m.DashboardComponent,\n      ),\n    // canActivate: [authGuard],\n  },\n];\n"],
+  "mappings": ";;;AAGO,IAAM,kBAA0B;EACrC;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAAiC,EAAE,KACxC,CAAC,MAAM,EAAE,kBAAkB;;;;",
+  "names": []
+}
