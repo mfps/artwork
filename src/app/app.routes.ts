@@ -17,5 +17,20 @@ export const appRoutes: Route[] = [
     loadChildren: () =>
       import('@art-work/feature-artworks').then((m) => m.artworkRoutes),
   },
+  {
+    path: 'collections',
+    loadChildren: () =>
+      import('@art-work/feature-collections').then((m) => m.collectionsRoutes),
+  },
+  {
+    path: 'settings',
+    loadChildren: () =>
+      import('@art-work/feature-settings').then((m) => m.settingsRoutes),
+  },
+  {
+    path: 'sales',
+    loadChildren: () =>
+      import('@art-work/feature-sales').then((m) => m.salesRoutes),
+  },
   { path: '**', redirectTo: '/auth/login' },
 ];

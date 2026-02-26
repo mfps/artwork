@@ -7,22 +7,22 @@ import {
   resource,
   signal,
 } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
 import {
   form,
   FormField,
   submit,
   validateStandardSchema,
 } from '@angular/forms/signals';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIcon } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { AuthStore, ArtworkService } from '@art-work/core';
+import { MatSelectModule } from '@angular/material/select';
+import { Router, RouterLink, ɵEmptyOutletComponent } from '@angular/router';
+import { ArtworkService, AuthStore } from '@art-work/core';
 import { AppSidebarComponent, StatusBadgeComponent } from '@art-work/ui';
-import { artworkFormSchema, ArtworkFormModel } from './artwork-detail.schema';
+import { ArtworkFormModel, artworkFormSchema } from './artwork-detail.schema';
 
 @Component({
   selector: 'lib-artwork-detail',
@@ -38,8 +38,8 @@ import { artworkFormSchema, ArtworkFormModel } from './artwork-detail.schema';
     MatIcon,
     MatProgressSpinnerModule,
     AppSidebarComponent,
-    StatusBadgeComponent,
-  ],
+    StatusBadgeComponent
+],
   template: `
     <div class="page">
       <lib-app-sidebar />
@@ -212,8 +212,10 @@ import { artworkFormSchema, ArtworkFormModel } from './artwork-detail.schema';
                     @if (isSaving()) {
                       <mat-spinner diameter="18" />
                     } @else {
-                      <mat-icon>save</mat-icon>
-                      Save Changes
+                      <ng-container>
+                        <mat-icon>save</mat-icon>
+                        Save Changes
+                      </ng-container>
                     }
                   </button>
 
@@ -228,8 +230,10 @@ import { artworkFormSchema, ArtworkFormModel } from './artwork-detail.schema';
                       @if (isDeleting()) {
                         <mat-spinner diameter="18" />
                       } @else {
-                        <mat-icon>delete</mat-icon>
-                        Delete
+                        <ng-container>
+                          <mat-icon>delete</mat-icon>
+                          Delete
+                        </ng-container>
                       }
                     </button>
                   }

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/fwille/Desktop/artwork/**)",
+      "Bash(xargs cat)",
+      "Bash(wc -l /c/Users/fwille/Desktop/artwork/libs/*/src/lib/**/*.ts)"
+    ]
+  }
+}

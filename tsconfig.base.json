@@ -13,7 +13,10 @@
       "@art-work/ui": ["libs/ui/src/index.ts"],
       "@art-work/feature-auth": ["libs/feature-auth/src/index.ts"],
       "@art-work/feature-dashboard": ["libs/feature-dashboard/src/index.ts"],
-      "@art-work/feature-artworks": ["libs/feature-artworks/src/index.ts"]
+      "@art-work/feature-artworks": ["libs/feature-artworks/src/index.ts"],
+      "@art-work/feature-collections": ["libs/feature-collections/src/index.ts"],
+      "@art-work/feature-settings": ["libs/feature-settings/src/index.ts"],
+      "@art-work/feature-sales": ["libs/feature-sales/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

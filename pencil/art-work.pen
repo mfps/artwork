@@ -1535,6 +1535,535 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "0hnfH",
+      "x": 3080,
+      "y": 0,
+      "name": "Collection Detail",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg-page",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Ubsvg",
+          "name": "cdSidebar",
+          "width": 260,
+          "height": "fill_container",
+          "fill": "$sidebar-bg",
+          "layout": "vertical",
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "iZUey",
+              "name": "cdLogo",
+              "gap": 10,
+              "padding": [
+                0,
+                0,
+                32,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "aXOjv",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "palette",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-teal"
+                },
+                {
+                  "type": "text",
+                  "id": "vVmFg",
+                  "fill": "$sidebar-text",
+                  "content": "ArtWork",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 22,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ghyza",
+              "name": "cdNav",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gvDtf",
+                  "fill": "$sidebar-text-muted",
+                  "content": "MANAGE",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "id": "phA55",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "name": "cdNav1",
+                  "width": "fill_container",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "layout-grid"
+                    },
+                    "s6lJf": {
+                      "content": "All Artworks"
+                    }
+                  }
+                },
+                {
+                  "id": "DfF0K",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "name": "cdNav2",
+                  "width": "fill_container",
+                  "fill": "$sidebar-hover",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "tag",
+                      "fill": "#FFFFFF"
+                    },
+                    "s6lJf": {
+                      "content": "Collections",
+                      "fill": "#FFFFFF"
+                    }
+                  }
+                },
+                {
+                  "id": "InUH7",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "name": "cdNav3",
+                  "width": "fill_container",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "shopping-bag"
+                    },
+                    "s6lJf": {
+                      "content": "Sales"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EetJd",
+              "name": "cdAcct",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                32,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "t9InE",
+                  "fill": "$sidebar-text-muted",
+                  "content": "ACCOUNT",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "id": "ugfqb",
+                  "type": "ref",
+                  "ref": "aR3Bb",
+                  "name": "cdNav4",
+                  "width": "fill_container",
+                  "descendants": {
+                    "GcxBM": {
+                      "iconFontName": "settings"
+                    },
+                    "s6lJf": {
+                      "content": "Settings"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QkDM9",
+          "name": "cdMain",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            32,
+            40
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "EgM4P",
+              "name": "cdBread",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "aE2s4",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "arrow-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "ikxza",
+                  "fill": "$accent-teal",
+                  "content": "Collections",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "myugN",
+                  "fill": "$text-muted",
+                  "content": "/",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "KQ4bP",
+                  "fill": "$text-secondary",
+                  "content": "Landscapes",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mhomx",
+              "name": "cdHdr",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y69S1",
+                  "name": "cdHdrLeft",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6f1el",
+                      "fill": "$text-primary",
+                      "content": "Landscapes",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 32,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dtkDq",
+                      "fill": "$text-secondary",
+                      "content": "7 artworks in this collection",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ginIf",
+              "name": "cdStats",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qqc80",
+                  "name": "cdSt1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uYbG0",
+                      "fill": "$text-primary",
+                      "content": "7",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Nzx2U",
+                      "fill": "$text-tertiary",
+                      "content": "In Collection",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hvkbE",
+                  "name": "cdSt2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SMG02",
+                      "fill": "$accent-teal",
+                      "content": "5",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "R1Q56",
+                      "fill": "$text-tertiary",
+                      "content": "Available",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5neny",
+                  "name": "cdSt3",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Zwo6Q",
+                      "fill": "$accent-orange",
+                      "content": "2",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gtrYF",
+                      "fill": "$text-tertiary",
+                      "content": "Sold",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xojq0",
+                  "name": "cdSt4",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PlwEl",
+                      "fill": "$text-primary",
+                      "content": "$14.8k",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UdQfk",
+                      "fill": "$text-tertiary",
+                      "content": "Total Value",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Lpkth",
+              "fill": "$text-tertiary",
+              "content": "ARTWORKS IN COLLECTION",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "J6CaG",
+              "name": "cdGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "fWlHh",
+                  "type": "ref",
+                  "ref": "qnB3N",
+                  "name": "cg1",
+                  "width": "fill_container",
+                  "descendants": {
+                    "KVDQt": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023131075.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "b0X9V": {
+                      "content": "Sunset Over Mountains"
+                    },
+                    "5iud6": {
+                      "content": "2024"
+                    },
+                    "sZUNX": {
+                      "content": "Oil on Canvas"
+                    },
+                    "83apc": {
+                      "content": "$3,200"
+                    }
+                  }
+                },
+                {
+                  "id": "uQwCK",
+                  "type": "ref",
+                  "ref": "qnB3N",
+                  "name": "cg2",
+                  "width": "fill_container",
+                  "descendants": {
+                    "KVDQt": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023144904.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "b0X9V": {
+                      "content": "Still Life with Lemons"
+                    },
+                    "5iud6": {
+                      "content": "2023"
+                    },
+                    "sZUNX": {
+                      "content": "Watercolor"
+                    },
+                    "83apc": {
+                      "content": "$2,800"
+                    }
+                  }
+                },
+                {
+                  "id": "KMgVm",
+                  "type": "ref",
+                  "ref": "qnB3N",
+                  "name": "cg3",
+                  "width": "fill_container",
+                  "descendants": {
+                    "KVDQt": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772023151573.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "b0X9V": {
+                      "content": "Ocean Whispers"
+                    },
+                    "5iud6": {
+                      "content": "2024"
+                    },
+                    "sZUNX": {
+                      "content": "Mixed Media"
+                    },
+                    "83apc": {
+                      "content": "$1,800"
+                    },
+                    "XH92B": {
+                      "fill": "#FFF0E8"
+                    },
+                    "XH92B/DwLRC": {
+                      "content": "Sold",
+                      "fill": "$accent-orange"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
